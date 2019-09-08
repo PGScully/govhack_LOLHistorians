@@ -17,7 +17,7 @@ class VideosAdapter(var items: List<VideoData>): RecyclerView.Adapter<VideosView
     }
 
     override fun onBindViewHolder(holder: VideosViewHolder, position: Int) {
-        holder.bindToUrl(items[position].thumbnailUrl)
+        holder.bindToUrl(url = items[position].thumbnailUrl)
         // TODO: add onClick to launch videoUrl
     }
 }

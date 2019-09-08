@@ -17,6 +17,6 @@ class PhotosAdapter(var items: List<String>): RecyclerView.Adapter<PhotosViewHol
     }
 
     override fun onBindViewHolder(holder: PhotosViewHolder, position: Int) {
-        holder.bindToUrl(items[position])
+        holder.bindToUrl(url = items[position])
     }
 }
